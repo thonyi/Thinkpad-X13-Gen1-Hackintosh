@@ -2,11 +2,25 @@
 |            |                                                           |
 | --------   | --------------------------------------------------------- |
 | Model      | Lenovo ThinkPad X13 Gen1                                  |
-| CPU        | Intel(R) Core(TM) i7-10810U                               |
+| CPU        | Intel(R) Core(TM) i5-10210U                               |
 | GPU        | Intel(R) UHD Graphics                                     |
 | Network    | Intel(R) Ethernet Connection (10) I219-LM / AX201         |                                                                           
 | Disk       | WDS100T3X0C                                               |
 | Bootloader | OpenCore 0.7.5 PreRelease                                      |
+
+
+#BIOS
+##关闭
+ - VT-d
+ - Intel SGX
+ - Secure Boot
+ - Security Ship
+##开启
+ - VT-x
+
+#显卡仿冒
+AAPL,ig-platform-id  data   0900A53E
+device-id   data   9B3E0000
 
 # 状态
 ## 正常
@@ -19,8 +33,8 @@
  - 电池
  - 睡眠
  - USB
+ - 键盘背光
 ## 不正常
- - 键盘无背光
  - 雷电未知 没设备测试
  ## 鸣谢
 - [VoodooSMBus](https://github.com/VoodooSMBus) 提供 [VoodooRMI](https://github.com/VoodooSMBus/VoodooRMI), [VoodooSMBus](https://github.com/VoodooSMBus/VoodooSMBus).
@@ -28,3 +42,4 @@
 - [1Revenger1](https://github.com/1Revenger1) 提供 [ECEnabler](https://github.com/1Revenger1/ECEnabler).
 - [Acidanthera](https://github.com/acidanthera) 提供 [AppleALC](https://github.com/acidanthera/AppleALC), [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM), [Lilu](https://github.com/acidanthera/Lilu), [OcBinaryData](https://github.com/acidanthera/OcBinaryData), [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), [VirtualSMC](https://github.com/acidanthera/VirtualSMC), [IntelMausi](https://github.com/acidanthera/IntelMausi), [VoodooInput](https://github.com/acidanthera/VoodooInput), [VoodooPS2](https://github.com/acidanthera/VoodooPS2), [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) ,[WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 - [OpenIntelWireless](https://github.com/OpenIntelWireless) 提供 [AirportItlwm](https://github.com/OpenIntelWireless/itlwm) [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware).
+[R-a-s-c-a-l]提供的i7版本EFI https://github.com/R-a-s-c-a-l/Thinkpad-X13-Gen1-Hackintosh
